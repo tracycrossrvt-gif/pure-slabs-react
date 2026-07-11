@@ -27,9 +27,7 @@ function Navbar() {
           ))}
         </ul>
 
-        <a href="#quote" className="navbar__cta">
-          Request a Quote
-        </a>
+        
       </div>
     </nav>
   );

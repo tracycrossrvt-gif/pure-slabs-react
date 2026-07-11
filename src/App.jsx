@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Story from "./components/Story";
 import Gallery from "./components/Gallery";
 import Services from "./components/Services";
+import Pricing from "./components/Pricing";
 import QuoteForm from "./components/QuoteForm";
 import Footer from "./components/Footer";
 
@@ -18,6 +19,7 @@ function App() {
         <Story />
         <Gallery />
         <Services />
+        <Pricing />
         <QuoteForm />
       </main>
 

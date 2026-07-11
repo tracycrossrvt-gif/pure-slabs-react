@@ -1,9 +1,12 @@
 export const businessInfo = {
   name: "Pure Slabs Creations",
-  tagline: "Custom Woodworking • Built with Balance",
-  headline: "Simple pieces. Strong lines. Natural character.",
+
+  tagline: "Custom Slabwork • Built by Nature • Composed by Pure Slabs",
+
+  headline: "Simple Pieces\nBold Grains\nNatural Beauty",
+
   description:
-    "Handcrafted woodworking inspired by nature, balance, and timeless craftsmanship. Built carefully, honestly, and designed to last.",
+    "Handcrafted, small-shop woodworking inspired by a love of nature and a desire to preserve its beauty. Intentional craftsmanship designed to stand the test of time.",
 
   email: "",
   phone: "",
@@ -27,8 +30,8 @@ export const businessInfo = {
     },
     {
       id: 4,
-      label: "Contact",
-      href: "#quote",
+      label: "Pricing",
+      href: "#pricing",
     },
   ],
 };

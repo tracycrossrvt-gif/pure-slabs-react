@@ -7,26 +7,41 @@ function Hero() {
         <div className="hero__content">
           <p className="hero__eyebrow">{businessInfo.tagline}</p>
 
-          <h1 className="hero__title">{businessInfo.headline}</h1>
+          <h1 className="hero__title">
+            {businessInfo.headline.split("\n").map((line) => (
+              <span key={line} className="hero__title-line">
+                {line}
+              </span>
+            ))}
+          </h1>
 
           <p className="hero__text">{businessInfo.description}</p>
 
-          <div className="hero__buttons">
-            <a href="#quote" className="button button--dark">
-              Request a Quote
-            </a>
+          <a href="#quote" className="button button--dark">
+            Request a Quote
+          </a>
+        </div>
 
-            <a href="#gallery" className="button button--light">
-              View Completed Work
-            </a>
+        <aside className="hero__offerings">
+          <p className="hero__offerings-eyebrow">Currently Offering</p>
+
+          <ul className="hero__offerings-list">
+            <li>Coffee tables</li>
+            <li>Console tables</li>
+            <li>Desks</li>
+            <li>Mantels</li>
+            <li>Wall hangings</li>
+            <li>Coat racks</li>
+            <li>Small bar tops</li>
+            <li>Bookshelves</li>
+          </ul>
+
+          <div className="hero__offerings-cta">
+            <p>Want something you don’t see?</p>
+
+            <a href="#quote">Request a custom quote →</a>
           </div>
-        </div>
-
-        <div className="hero__visual" aria-hidden="true">
-          <div className="hero__wood-shape hero__wood-shape--one"></div>
-          <div className="hero__wood-shape hero__wood-shape--two"></div>
-          <div className="hero__wood-shape hero__wood-shape--three"></div>
-        </div>
+        </aside>
       </div>
     </header>
   );
